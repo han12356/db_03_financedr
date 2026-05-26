@@ -74,3 +74,17 @@ if __name__ == "__main__":
     main()
 
 # endregion
+
+import FinanceDataReader as fdr
+
+
+def main():
+    print('[KRX]')
+    kr_stocks = fdr.StockListing('KRX')
+    print(kr_stocks.info())
+    print(kr_stocks.columns)
+    print(kr_stocks.head())
+
+
+if __name__ == "__main__":
+    main()
